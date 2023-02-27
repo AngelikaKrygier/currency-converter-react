@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container {
+  width: 600px;
+   font-family: 'Lato', sans-serif;
+   font-size: 20px;
+   line-height: 2;
+   text-align: left;
+   margin: 20px auto;
+   max-width: 700px;
+   padding: 20px;
+}
+
+.container__paragraph {
+   margin: 0px;
+   font-style: italic;
+   font-size: 15px;
+}
