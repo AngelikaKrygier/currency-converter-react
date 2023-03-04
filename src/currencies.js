@@ -2,14 +2,14 @@ export const currencies = [
 
     {
         short: "EUR",
-        rate: 4.52
+        rate: 4.704
     },
     {
         short: "CHF",
-        rate: 4.75
+        rate: 4.728
     },
     {
         short: "USD",
-        rate: 4.95
+        rate: 4.4341
     },
 ]
