@@ -3,25 +3,24 @@ import React, { useState } from "react";
 import { currencies } from '../currencies.js'
 import Result from "./Result";
 
-const Form = ({result, calculateResult}) => {
+const Form = ({ result, calculateResult }) => {
 
-    const [amount, setAmount] = useState("")
-    const [currency, setCurrency] = useState(currencies[0].short.value)
+    const [amount, setAmount] = useState("");
+    const [currency, setCurrency] = useState(currencies[0].short);
 
     const onFormSubmit = (event) => {
         event.preventDefault();
-        calculateResult(currency, amount);
-
+        calculateResult(amount, currency);
     };
 
     return (
         < form
             className="form"
-            onClick={onFormSubmit}>
+            onSubmit={onFormSubmit}>
             <fieldset className="form__fieldset">
                 <legend className="form__legend">KALKULATOR WALUT</legend>
                 <p>
-                    <label> <span className="form__labelText"> kwota*: </span>
+                    <label> <span className="form__labelText"> kwota w zł*: </span>
                         <input
                             className="form__field"
                             type="number"
@@ -54,17 +53,17 @@ const Form = ({result, calculateResult}) => {
                     </label>
                 </p>
                 <p>
-                    <label>
-                        <Result
-                            result={result}
-                        />
-                    </label>
+                    <Result
+                        result={result}
+                    />
                 </p>
             </fieldset>
-            <button className="form__button">Przelicz!</button>
-            <button className="form__button" type="reset">Resetuj!</button>
+            <button
+                className="form__button">
+                Przelicz!
+            </button>
         </form >
-    )
-}
+    );
+};
 
 export default Form

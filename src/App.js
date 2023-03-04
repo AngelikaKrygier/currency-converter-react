@@ -7,14 +7,12 @@ function App() {
   const [result, setResult] = useState()
 
   const calculateResult = (amount, currency) => {
-
-    const rate = currencies.find(({ short }) => short === currency).rate;
+    const rate = currencies.find(({ short }) => short === currency).rate
 
     setResult({
       targetAmount: amount / rate,
       currency
     })
-
   };
 
   return (
@@ -25,4 +23,5 @@ function App() {
     </div>
   );
 }
+
 export default App;
