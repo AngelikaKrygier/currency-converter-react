@@ -1,0 +1,6 @@
+.clock {
+    display: flex;
+    justify-content: end;
+    font-family: 'Courier Prime', monospace;
+    font-size: 11px;
+}
