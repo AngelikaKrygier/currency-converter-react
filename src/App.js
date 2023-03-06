@@ -4,7 +4,7 @@ import { currencies } from './currencies.js'
 
 function App() {
 
-  const [result, setResult] = useState()
+  const [result, setResult] = useState(null)
 
   const calculateResult = (amount, currency) => {
     const rate = currencies.find(({ short }) => short === currency).rate
@@ -23,5 +23,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

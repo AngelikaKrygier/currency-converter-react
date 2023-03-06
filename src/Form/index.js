@@ -5,7 +5,6 @@ import Result from "./Result";
 import Clock from "./Clock";
 
 const Form = ({ result, calculateResult }) => {
-
     const [amount, setAmount] = useState("");
     const [currency, setCurrency] = useState(currencies[0].short);
 
@@ -67,5 +66,4 @@ const Form = ({ result, calculateResult }) => {
         </form >
     );
 };
-
 export default Form
