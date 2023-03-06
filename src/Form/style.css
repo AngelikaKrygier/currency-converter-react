@@ -34,11 +34,6 @@
     font-size: 18px;
 }
 
-.form__paragraph {
-    display: flex;
-    justify-content: center;
-}
-
 .form__button {
     position: relative;
     max-width: 650px;
