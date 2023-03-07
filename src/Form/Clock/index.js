@@ -16,11 +16,11 @@ const Clock = () => {
 
     return (
         <div class="clock"> Dzisiaj jest {" "}
-            {currentDate.toLocaleString(false, {
+            {currentDate.toLocaleString("pl-PL", {
                 weekday: "long",
-                hour: "2-digit",
-                minute: "2-digit",
-                second: "2-digit",
+                hour: "numeric",
+                minute: "numeric",
+                second: "numeric",
                 day: "numeric",
                 month: "long",
                 year: "numeric"
