@@ -1,12 +1,12 @@
-import "./style.css";
+import { StyledResult } from "./styled";
 
 const Result = ({ result }) => (
-    <p className="result">
+    <StyledResult>
         {result && (
             <>
                 {"wartość: "}{result.targetAmount.toFixed(2)}&nbsp;{result.currency}
             </>
         )}
-    </p>
+    </StyledResult>
 );
 export default Result

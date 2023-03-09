@@ -1,4 +1,6 @@
-.result {
+import styled from "styled-components";
+
+export const StyledResult = styled.p`
     color: rgba(0, 0, 0, 0.81);
     font-weight: 700;
     text-align: center;
@@ -6,4 +8,4 @@
     padding: 10px;
     display: flex;
     justify-content: center;
-}
+`

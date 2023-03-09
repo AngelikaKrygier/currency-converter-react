@@ -1,8 +1,8 @@
-import "./style.css";
 import React, { useState } from "react";
 import { currencies } from '../currencies.js'
 import Result from "./Result";
 import Clock from "./Clock";
+import { Fieldset, Legend, LabelText, Input, Select, Button } from "./styled";
 
 const Form = ({ result, calculateResult }) => {
     const [amount, setAmount] = useState("");
@@ -15,15 +15,13 @@ const Form = ({ result, calculateResult }) => {
 
     return (
         < form
-            className="form"
             onSubmit={onFormSubmit}>
-            <fieldset className="form__fieldset">
-                <Clock/>
-                <legend className="form__legend">KALKULATOR WALUT</legend>
+            <Fieldset>
+                <Clock />
+                <Legend>KALKULATOR WALUT</Legend>
                 <p>
-                    <label> <span className="form__labelText"> kwota w zł*: </span>
-                        <input
-                            className="form__field"
+                    <label> <LabelText> kwota w zł*: </LabelText>
+                        <Input
                             type="number"
                             name="amount"
                             min="1"
@@ -35,9 +33,8 @@ const Form = ({ result, calculateResult }) => {
                     </label>
                 </p>
                 <p>
-                    <label> <span className="form__labelText">waluta</span>
-                        <select
-                            className="form__field"
+                    <label> <LabelText>waluta</LabelText>
+                        <Select
                             name="currency"
                             value={currency}
                             onChange={({ target }) => setCurrency(target.value)}
@@ -50,7 +47,7 @@ const Form = ({ result, calculateResult }) => {
                                     {currency.short}
                                 </option>
                             ))}
-                        </select>
+                        </Select>
                     </label>
                 </p>
                 <p>
@@ -58,11 +55,10 @@ const Form = ({ result, calculateResult }) => {
                         result={result}
                     />
                 </p>
-            </fieldset>
-            <button
-                className="form__button">
+            </Fieldset>
+            <Button>
                 Przelicz!
-            </button>
+            </Button>
         </form >
     );
 };
