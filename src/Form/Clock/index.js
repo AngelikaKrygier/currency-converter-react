@@ -14,17 +14,20 @@ const Clock = () => {
         };
     }, []);
 
+    const currentDateView = currentDate.toLocaleString("pl-PL", {
+        weekday: "long",
+        hour: "numeric",
+        minute: "numeric",
+        second: "numeric",
+        day: "numeric",
+        month: "long",
+        year: "numeric"
+    })
+
     return (
-        <div class="clock"> Dzisiaj jest {" "}
-            {currentDate.toLocaleString("pl-PL", {
-                weekday: "long",
-                hour: "numeric",
-                minute: "numeric",
-                second: "numeric",
-                day: "numeric",
-                month: "long",
-                year: "numeric"
-            })}
+        <div class="clock"> 
+            Dzisiaj jest {" "} 
+            {currentDateView}
         </div>
     )
 };
