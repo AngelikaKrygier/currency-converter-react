@@ -2,7 +2,7 @@
 
 Currency converter enables to convert a value from Polish currency to a specific currency (EUR, USD, CHF).
 
-![CurrencyConverterReact](https://user-images.githubusercontent.com/123166327/223073940-b43c246a-5a56-424b-956d-eda85160a2ba.gif)
+![CurrencyConverter_2](https://user-images.githubusercontent.com/123166327/223362317-52088a69-6afc-4ad3-ac4c-8df90065f0cd.gif)
 
 ### Technologies
 - HTML
