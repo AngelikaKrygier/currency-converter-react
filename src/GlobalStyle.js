@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-image: url("images/background.png");
+    background-image: url(${"https://i.postimg.cc/7hysYXJ9/background.png"});
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
