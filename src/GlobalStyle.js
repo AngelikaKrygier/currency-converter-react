@@ -8,8 +8,8 @@ export const GlobalStyle = createGlobalStyle`
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-image: url(${"https://i.postimg.cc/7hysYXJ9/background.png"});
-    background-size: cover;
+    background-image: url(${"https://i.postimg.cc/Kj6NXrxt/hd-wallpaper-gdf8a00a07-1920-1.jpg"});
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
   }
