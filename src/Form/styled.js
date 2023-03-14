@@ -59,7 +59,7 @@ export const Button = styled.button`
     border-radius: 10px;
     font-size: 18px;
 
-        &:hover{
-            background-color: rgba(0, 19, 164, 0.863); 
-        }
+    &:hover{
+        background-color: rgba(0, 19, 164, 0.863); 
+    }
 `
