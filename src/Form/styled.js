@@ -1,23 +1,23 @@
 import styled from "styled-components";
 
 export const Fieldset = styled.fieldset`
-    background-color: #eeeeeeef;
-    border: solid 1px #9b9a9a;
+    background-color: ${({ theme }) => theme.color.cornFloweBlue};
+    border: solid 1px ${({ theme }) => theme.color.dustyGrey};
     max-width: 600px;
     border-radius: 10px;
     position: relative;
-    box-shadow: 0px 0px 30px 0px #A3A3A3;
+    box-shadow: 0px 0px 30px 0px ${({ theme }) => theme.color.silver};
     padding: 20px;
     margin: auto;
 `;
 
 export const Legend = styled.legend`
-    color: white;
+    color: ${({theme}) => theme.color.white};
     border: none;
     border-radius: 10px;
     font-size: 15px;
     padding: 10px;
-    background-color: rgb(0 20 164 / 68%);
+    background-color: ${({ theme }) => theme.color.kleinBlue};
 `;
 
 export const LabelText = styled.span`
@@ -38,7 +38,7 @@ export const Input = styled.input`
 
 export const Select = styled.select`
     padding: 8px;
-    border: solid 1px #bbb;
+    border: solid 1px ${({ theme }) => theme.color.silver};
     border-radius: 5px;
     max-width: 300px;
     width: 100%;
@@ -51,15 +51,15 @@ export const Button = styled.button`
     width: 100%;
     padding: 10px;
     margin: 10px auto;
-    background-color: rgb(0 20 164 / 68%);
+    background-color: ${({ theme }) => theme.color.kleinBlue};
     display: flex;
     justify-content: center;
-    color: white;
+    color: ${({theme}) => theme.color.white};
     border: none;
     border-radius: 10px;
     font-size: 18px;
 
     &:hover{
-        background-color: rgba(0, 19, 164, 0.863); 
+        filter: brightness(120%);
     }
 `
