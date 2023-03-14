@@ -6,13 +6,13 @@ export const Fieldset = styled.fieldset`
     max-width: 600px;
     border-radius: 10px;
     position: relative;
-    box-shadow: 0px 0px 30px 0px ${({ theme }) => theme.color.silver};
+    box-shadow: 0px 0px 30px 0px ${({ theme }) => theme.color.black};
     padding: 20px;
     margin: auto;
 `;
 
 export const Legend = styled.legend`
-    color: ${({theme}) => theme.color.white};
+    color: ${({ theme }) => theme.color.white};
     border: none;
     border-radius: 10px;
     font-size: 15px;
@@ -38,12 +38,12 @@ export const Input = styled.input`
 
 export const Select = styled.select`
     padding: 8px;
-    border: solid 1px ${({ theme }) => theme.color.silver};
+    border: solid 1px ${({ theme }) => theme.color.black};
     border-radius: 5px;
     max-width: 300px;
     width: 100%;
     font-size: 18px;
-`
+`;
 
 export const Button = styled.button`
     position: relative;
@@ -54,7 +54,7 @@ export const Button = styled.button`
     background-color: ${({ theme }) => theme.color.kleinBlue};
     display: flex;
     justify-content: center;
-    color: ${({theme}) => theme.color.white};
+    color: ${({ theme }) => theme.color.white};
     border: none;
     border-radius: 10px;
     font-size: 18px;
@@ -62,4 +62,29 @@ export const Button = styled.button`
     &:hover{
         filter: brightness(120%);
     }
+`;
+
+export const Loading = styled.p`
+    background-color: ${({ theme }) => theme.color.white};
+    color: ${({ theme }) => theme.color.black};
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 50px;
+`;
+
+export const Error = styled.p`
+    background-color: ${({ theme }) => theme.color.white};
+    color: ${({ theme }) => theme.color.black};
+    display: flex;
+    justify-content: center;
+
+`
+export const Message = styled.p`
+    color: ${({ theme }) => theme.color.black};
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    text-align: center;
 `

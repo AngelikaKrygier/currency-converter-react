@@ -3,9 +3,10 @@ export const theme = {
         white: "#ffffff",
         black: "#000000cf",
         dustyGray: "#9b9a9a",
-        sliver: "#A3A3A3",
+        silver: "#A3A3A3",
         cornFloweBlue: "#eeeeeeef",
         kleinBlue: "#0014a4ad",
+        crimson: "#dc143c"
     },
     breakPoint: {
 
