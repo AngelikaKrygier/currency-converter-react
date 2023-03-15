@@ -10,8 +10,7 @@ export const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     background-image: url(${"https://i.postimg.cc/Kj6NXrxt/hd-wallpaper-gdf8a00a07-1920-1.jpg"});
     background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   code {
