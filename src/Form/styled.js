@@ -36,15 +36,6 @@ export const Input = styled.input`
     font-size: 18px;
 `;
 
-export const Select = styled.select`
-    padding: 8px;
-    border: solid 1px ${({ theme }) => theme.color.black};
-    border-radius: 5px;
-    max-width: 300px;
-    width: 100%;
-    font-size: 18px;
-`;
-
 export const Button = styled.button`
     position: relative;
     max-width: 650px;
@@ -79,7 +70,9 @@ export const Error = styled.p`
     color: ${({ theme }) => theme.color.black};
     display: flex;
     justify-content: center;
-
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 50px;
 `
 export const Message = styled.p`
     color: ${({ theme }) => theme.color.black};

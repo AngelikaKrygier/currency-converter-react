@@ -58,7 +58,8 @@ const Form = () => {
                         </p>
                         <p>
                             <label> <LabelText>waluta</LabelText>
-                                <Select
+                                <Input
+                                    as="Select"
                                     name="currency"
                                     value={currency}
                                     onChange={({ target }) => setCurrency(target.value)}
@@ -71,7 +72,7 @@ const Form = () => {
                                             {currency}
                                         </option>
                                     ))}
-                                </Select>
+                                </Input>
                             </label>
                         </p>
                         <p>
