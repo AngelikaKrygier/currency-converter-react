@@ -1,6 +1,6 @@
 # Currency Converter
 
-Currency converter enables to convert a value from Polish currency to a specific currency. Currency values are constanly updated from the European Central Bank. 
+The currency converter enables the conversion of a value from Polish currency to a specific currency. Currency values are constantly updated from the European Central Bank.
 ![CurrencyConverter_3](https://user-images.githubusercontent.com/123166327/225118592-c78d9888-adf8-4b54-8e2e-633fd870ae64.gif)
 
 ### Technologies
